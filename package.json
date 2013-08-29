@@ -8,6 +8,7 @@
     "name": "Loïc Mahieu",
     "email": "mahieuloic@gmail.com"
   },
+  "main": "lib/embed",
   "repository": {
     "type": "git",
     "url": "https://github.com/LoicMahieu/node-assets-embed"
