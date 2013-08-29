@@ -1,0 +1,31 @@
+{
+  "name": "node-assets-embed",
+  "version": "0.0.0",
+  "description": "Embed HTML assets (js/css) in the document",
+  "homepage": "https://github.com/LoicMahieu/node-assets-embed",
+  "bugs": "https://github.com/LoicMahieu/node-assets-embed/issues",
+  "author": {
+    "name": "Loïc Mahieu",
+    "email": "mahieuloic@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LoicMahieu/node-assets-embed"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-mocha-test": "~0.6.3",
+    "grunt-contrib-watch": "~0.5.0",
+    "chai": "~1.7.2",
+    "matchdep": "~0.1.2"
+  },
+  "dependencies": {
+    "cheerio": "~0.12.1",
+    "async": "~0.2.9"
+  }
+}

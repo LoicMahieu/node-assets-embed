@@ -1,0 +1,4 @@
+
+function HelloInFile (argument) {
+  // body...
+}
