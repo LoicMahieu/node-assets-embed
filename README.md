@@ -1,4 +1,3 @@
-# node-assets-embed [![Build Status](https://secure.travis-ci.org/LoicMahieu/node-assets-embed.png?branch=master)](http://travis-ci.org/LoicMahieu/node-assets-embed)
 
 Embed HTML assets (js/css) in the document
 
@@ -6,8 +5,8 @@ Embed HTML assets (js/css) in the document
 Install the module with: `npm install node-assets-embed`
 
 ```javascript
-var node-assets-embed = require('node-assets-embed');
-node-assets-embed.awesome(); // "awesome"
+var embed = require('node-assets-embed');
+embed.embedFile('path/to/file.html', function (err, html) {});
 ```
 
 ## Documentation
