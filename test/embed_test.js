@@ -13,7 +13,7 @@ var expected = fs.readFileSync(expectedFile).toString('utf-8');
 
 describe('Node.js Assets Embed', function () {
   it('Can embed HTML', function (done) {
-    embed.embedFile(testFile, {}, function (err, html) {
+    embed.embedFile(testFile, function (err, html) {
       expect(html).to.equal(expected);
       done();
     });
