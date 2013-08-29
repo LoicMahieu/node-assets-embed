@@ -13,6 +13,10 @@ var testFileContent = fs.readFileSync(testFile).toString('utf-8');
 var expectedFile = fixturesDir + '/expected.html';
 var expected = fs.readFileSync(expectedFile).toString('utf-8');
 
+embed.embed(testFileContent, {root: fixturesDir}, function (err, html) {
+  fs.writeFileSync(fixturesDir + '/done.html', html);
+});
+
 describe('Node.js Assets Embed', function () {
   it('#embed', function (done) {
     embed.embed(testFileContent, {root: fixturesDir}, function (err, html) {
