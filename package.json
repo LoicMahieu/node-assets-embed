@@ -17,6 +17,17 @@
       "type": "MIT"
     }
   ],
+  "keywords": [
+    "html",
+    "embed",
+    "js",
+    "css",
+    "stylesheet",
+    "asset"
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-mocha-test": "~0.6.3",
