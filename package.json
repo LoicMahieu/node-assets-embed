@@ -1,6 +1,6 @@
 {
   "name": "node-assets-embed",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Embed HTML assets (js/css) in the document",
   "homepage": "https://github.com/LoicMahieu/node-assets-embed",
   "bugs": "https://github.com/LoicMahieu/node-assets-embed/issues",
