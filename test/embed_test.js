@@ -7,15 +7,32 @@ var embed = require('../lib/embed.js');
 var fs = require('fs');
 var expect = require('chai').expect;
 
-var testFile = __dirname + '/fixtures/page.html';
-var expectedFile = __dirname + '/fixtures/expected.html';
+var fixturesDir = __dirname + '/fixtures';
+var testFile = fixturesDir + '/page.html';
+var testFileContent = fs.readFileSync(testFile).toString('utf-8');
+var expectedFile = fixturesDir + '/expected.html';
 var expected = fs.readFileSync(expectedFile).toString('utf-8');
 
 describe('Node.js Assets Embed', function () {
-  it('Can embed HTML', function (done) {
+  it('#embed', function (done) {
+    embed.embed(testFileContent, {root: fixturesDir}, function (err, html) {
+      expect(html).to.equal(expected);
+      done();
+    });
+  });
+  it('#embedFile', function (done) {
     embed.embedFile(testFile, function (err, html) {
       expect(html).to.equal(expected);
       done();
     });
+  });
+
+  it('#embedSync', function (done) {
+    expect(embed.embedSync(testFileContent, {root: fixturesDir})).to.equal(expected);
+    done();
+  });
+  it('#embedFileSync', function (done) {
+    expect(embed.embedFileSync(testFile)).to.equal(expected);
+    done();
   });
 });
