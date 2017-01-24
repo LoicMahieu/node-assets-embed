@@ -2,6 +2,8 @@
 Embed HTML assets (js/css) in the document
 
 ## Getting Started
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/LoicMahieu/node-assets-embed.svg)](https://greenkeeper.io/)
 Install the module with: `npm install node-assets-embed`
 
 ```javascript
